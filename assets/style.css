@@ -180,7 +180,7 @@ section { padding-block: 48px; }
 .people .role { color: var(--navy); font-weight: 500; font-size: .9375rem; line-height: 1.4; margin-bottom: 2px; }
 .people p { color: var(--muted); font-size: .9rem; line-height: 1.5; }
 .people .role { color: var(--navy); }
-.contact { display: flex; gap: 4px; margin: 6px 0 0 -10px; }
+.contact { display: flex; flex-wrap: wrap; gap: 4px; margin: 6px 0 0 -10px; }
 .contact a { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; color: var(--navy); transition: background-color .15s ease; }
 .contact a:hover { background: #E3EAF4; }
 .contact svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
