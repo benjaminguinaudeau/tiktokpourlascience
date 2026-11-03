@@ -60,7 +60,7 @@ ul { padding: 0; list-style: none; }
 .peak.b { right: calc(20.7% + 10px); top: 0; }
 .axis { display: flex; justify-content: space-between; color: var(--navy-soft); font-size: .8rem; margin-top: 6px; }
 
-.stats { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 44px; border-top: 1px solid rgba(255, 255, 255, .25); padding-top: 20px; }
+.stats { display: grid; grid-template-columns: repeat(2, 1fr); margin-top: 44px; border-top: 1px solid rgba(255, 255, 255, .25); padding-top: 20px; }
 .stats b { display: block; font-size: clamp(1.5rem, 3.6vw, 2.4rem); line-height: 1.15; font-weight: 700; }
 .stats span { color: var(--navy-soft); font-size: .95rem; }
 
