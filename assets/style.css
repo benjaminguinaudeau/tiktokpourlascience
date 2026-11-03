@@ -185,6 +185,7 @@ section { padding-block: 48px; }
 .contact a:hover { background: #E3EAF4; }
 .contact svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .contact svg .dot { fill: currentColor; }
+.contact svg.solid { fill: currentColor; stroke: none; width: 20px; height: 20px; }
 
 /* Footer */
 footer { border-top: 1px solid var(--line); padding-block: 24px; color: var(--muted); font-size: .8125rem; line-height: 1.5; }
