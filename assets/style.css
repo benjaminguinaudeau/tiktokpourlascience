@@ -240,3 +240,16 @@ footer a { color: inherit; display: inline-block; padding-block: 13px; }
   .about-box { padding: 36px 40px; }
   .people { grid-template-columns: repeat(3, 1fr); gap: 16px 32px; }
 }
+
+/* Press review */
+.press { padding-top: 0; }
+.press-list { margin-top: 20px; border-top: 1px solid var(--line); }
+.press-list li { padding-block: 14px; border-bottom: 1px solid var(--line); }
+.press-meta { font-size: .8125rem; line-height: 1.4; color: var(--muted); margin-bottom: 4px; }
+.press-meta b { color: var(--ink); font-weight: 600; }
+.press-list a { color: var(--navy); font-weight: 500; font-size: .9375rem; line-height: 1.45; text-decoration-thickness: 1px; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.press-list a:hover { color: var(--navy-deep); }
+@media (min-width: 800px) {
+  .press-list { margin-top: 32px; max-width: 80ch; }
+  .press-list a { font-size: 1rem; }
+}
