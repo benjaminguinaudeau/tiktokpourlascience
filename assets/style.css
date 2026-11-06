@@ -276,3 +276,36 @@ footer a { color: inherit; display: inline-block; padding-block: 13px; }
   .press-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 28px; }
   .press-title { font-size: 1rem; }
 }
+
+/* Press logos and pagination */
+.press-who { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.press-logo { flex: none; width: 32px; height: 32px; border-radius: 8px; box-shadow: 0 0 0 1px var(--line); object-fit: cover; }
+.press-logo.mono { display: grid; place-items: center; background: var(--navy); color: #fff; font: 800 1rem/1 var(--serif); box-shadow: none; }
+.pp { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+.pager { display: none; }
+@supports selector(:has(a)) {
+  .pager { display: flex; justify-content: center; gap: 8px; margin-top: 20px; }
+  .pager label { display: grid; place-items: center; min-width: 44px; height: 44px; padding: 0 12px; border-radius: 999px; background: #fff; border: 1px solid var(--line); color: var(--navy); font-weight: 600; cursor: pointer; transition: background-color .15s ease; }
+  .pager label:hover { background: #E3EAF4; }
+  .press-list li[data-p]:not([data-p="1"]) { display: none; }
+  .press-box:has(#pp-1:checked) .press-list li[data-p] { display: none; }
+  .press-box:has(#pp-1:checked) .press-list li[data-p="1"] { display: list-item; }
+  .press-box:has(#pp-1:checked) .pager label[for="pp-1"] { background: var(--navy); border-color: var(--navy); color: #fff; }
+  .press-box:has(#pp-1:focus-visible) .pager label[for="pp-1"] { outline: 3px solid var(--focus); outline-offset: 2px; }
+  .press-box:has(#pp-2:checked) .press-list li[data-p] { display: none; }
+  .press-box:has(#pp-2:checked) .press-list li[data-p="2"] { display: list-item; }
+  .press-box:has(#pp-2:checked) .pager label[for="pp-2"] { background: var(--navy); border-color: var(--navy); color: #fff; }
+  .press-box:has(#pp-2:focus-visible) .pager label[for="pp-2"] { outline: 3px solid var(--focus); outline-offset: 2px; }
+  .press-box:has(#pp-3:checked) .press-list li[data-p] { display: none; }
+  .press-box:has(#pp-3:checked) .press-list li[data-p="3"] { display: list-item; }
+  .press-box:has(#pp-3:checked) .pager label[for="pp-3"] { background: var(--navy); border-color: var(--navy); color: #fff; }
+  .press-box:has(#pp-3:focus-visible) .pager label[for="pp-3"] { outline: 3px solid var(--focus); outline-offset: 2px; }
+  .press-box:has(#pp-4:checked) .press-list li[data-p] { display: none; }
+  .press-box:has(#pp-4:checked) .press-list li[data-p="4"] { display: list-item; }
+  .press-box:has(#pp-4:checked) .pager label[for="pp-4"] { background: var(--navy); border-color: var(--navy); color: #fff; }
+  .press-box:has(#pp-4:focus-visible) .pager label[for="pp-4"] { outline: 3px solid var(--focus); outline-offset: 2px; }
+  .press-box:has(#pp-5:checked) .press-list li[data-p] { display: none; }
+  .press-box:has(#pp-5:checked) .press-list li[data-p="5"] { display: list-item; }
+  .press-box:has(#pp-5:checked) .pager label[for="pp-5"] { background: var(--navy); border-color: var(--navy); color: #fff; }
+  .press-box:has(#pp-5:focus-visible) .pager label[for="pp-5"] { outline: 3px solid var(--focus); outline-offset: 2px; }
+}
