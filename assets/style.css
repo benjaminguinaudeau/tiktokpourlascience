@@ -44,6 +44,9 @@ sup { line-height: 0; }
 /* Buttons */
 .btn { display: block; width: 100%; min-height: 52px; padding: 14px 20px; border: 0; border-radius: var(--radius-btn); background: var(--navy); color: #fff; font: 700 1rem/1.25 var(--sans); text-align: center; text-decoration: none; text-wrap: balance; transition: background-color .15s ease; }
 .btn:hover { background: var(--navy-deep); }
+.btn:has(.logo) { display: flex; align-items: center; justify-content: center; gap: 10px; }
+.btn .logo { width: 1.25em; height: 1.25em; flex: none; }
+.callout .btn + .btn { margin-top: 10px; }
 .btn:active { transform: translateY(1px); }
 .btn.secondary { background: #fff; color: var(--navy); border: 1.5px solid var(--navy); }
 .btn.secondary:hover { background: var(--panel); }
@@ -70,8 +73,6 @@ sup { line-height: 0; }
 .callout .btn { margin-top: 16px; }
 .facts { display: flex; flex-wrap: wrap; gap: 0 8px; margin-top: 12px; font-size: .84375rem; line-height: 1.45; color: var(--muted); }
 .facts li + li::before { content: "·"; margin-right: 8px; }
-.callout .also { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--line); font-size: .9375rem; }
-.callout .also + .btn { margin-top: 12px; }
 .callout .touch { font-size: .9rem; margin-top: 2px; }
 
 /* The study */
@@ -161,6 +162,8 @@ section { padding-block: 48px; }
 /* Sticky call to action, phones only */
 .sticky-cta { position: sticky; bottom: 0; z-index: 5; background: #fff; border-top: 1px solid var(--line); box-shadow: 0 -6px 20px rgba(0, 30, 80, .08); padding: 8px 16px calc(8px + env(safe-area-inset-bottom)); }
 .sticky-cta .btn { min-height: 48px; padding-block: 12px; }
+.sticky-cta p { font-size: .8125rem; color: var(--muted); margin-bottom: 6px; text-align: center; }
+.sticky-cta .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 
 /* Note */
 .note-grid { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 16px; align-items: start; }
@@ -218,8 +221,8 @@ footer a { color: inherit; display: inline-block; padding-block: 13px; }
   .callout .btn { margin-top: 20px; }
   .btn { padding-inline: 28px; }
   .btn.inline { display: inline-block; width: auto; min-width: 280px; }
+  .btn.inline:has(.logo) { display: inline-flex; vertical-align: top; }
   .btn.inline + .btn.inline { margin-left: 12px; }
-  .callout .also + .btn { margin-top: 14px; }
   .sticky-cta { display: none; }
   .study-grid { grid-template-columns: 5fr 6fr; gap: 56px; align-items: center; }
   .numbers { font-size: .875rem; }
