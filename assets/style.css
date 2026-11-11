@@ -46,6 +46,11 @@ sup { line-height: 0; }
 .btn:hover { background: var(--navy-deep); }
 .btn:has(.logo) { display: flex; align-items: center; justify-content: center; gap: 10px; }
 .btn .logo { width: 1.25em; height: 1.25em; flex: none; }
+/* Platform colours: TikTok black, Instagram purple-pink gradient (darkened for white-text contrast) */
+.btn.tt { background: #010101; }
+.btn.tt:hover { background: #2b2b2b; }
+.btn.ig { background: linear-gradient(45deg, #833ab4 0%, #c13584 55%, #d62976 100%); }
+.btn.ig:hover { background: linear-gradient(45deg, #6d2f97 0%, #a42d70 55%, #b8225f 100%); }
 .callout .btn + .btn { margin-top: 10px; }
 .btn:active { transform: translateY(1px); }
 .btn.secondary { background: #fff; color: var(--navy); border: 1.5px solid var(--navy); }
