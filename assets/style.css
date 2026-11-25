@@ -321,3 +321,8 @@ footer a { color: inherit; display: inline-block; padding-block: 13px; }
   .press-box:has(#pp-5:checked) .pager label[for="pp-5"] { background: var(--navy); border-color: var(--navy); color: #fff; }
   .press-box:has(#pp-5:focus-visible) .pager label[for="pp-5"] { outline: 3px solid var(--focus); outline-offset: 2px; }
 }
+
+/* Tribune du Monde (19 nov. 2026), dans le haut de la page */
+.tribune-strip { display: grid; gap: 4px; margin: 18px 0 20px; padding: 14px 18px; max-width: 34rem; border-left: 5px solid #F0CC6B; border-radius: var(--radius-panel); background: rgba(255, 255, 255, .08); color: #fff; text-decoration: none; transition: background-color .15s ease; }
+.tribune-strip:hover { background: rgba(255, 255, 255, .15); }
+.tribune-strip-title { font-family: var(--serif); font-weight: 800; font-size: 1.125rem; line-height: 1.35; }
